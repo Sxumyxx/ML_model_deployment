@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 import pickle
 
 # Load tokenizer and model with correct paths
-tokenizer = pickle.load(open(r"ML_model_deployment/models/cv.pkl", "rb"))
-model = pickle.load(open(r"ML_model_deployment/models/clf.pkl", "rb"))
+tokenizer = pickle.load(open(r"models/cv.pkl", "rb"))
+model = pickle.load(open(r"models/clf.pkl", "rb"))
 
 app = Flask(__name__)
 
